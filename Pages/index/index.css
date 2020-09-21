@@ -1,0 +1,40 @@
+.container{
+   margin-top: 50px;
+    width: 800px;
+    height: 740px;
+    margin-left: 50px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+body{
+    background-color: lightgrey;
+}
+p{
+    font-size: 20px;
+}
+
+h1{
+    color: teal;
+    /* text-shadow: 3px 3px white; */
+    padding: 10px;
+    font-family: cursive;
+    font-size: 60px;
+    text-decoration: underline teal;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar{
+    padding: 20px;
+}
+.navbar-brand{
+    background-color: teal;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
