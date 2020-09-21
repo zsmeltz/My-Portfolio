@@ -1,0 +1,15 @@
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar{
+    padding: 20px;
+}
+.navbar-brand{
+    background-color: teal;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    box-shadow: 5px 7px #888888;
+}
