@@ -12,7 +12,8 @@ body{
     background-color: lightgrey;
 }
 p{
-    font-size: 20px;
+    font-size: 17px;
+    font-family: 'Kufam', cursive;
 }
 
 h1{
@@ -37,4 +38,5 @@ h1{
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
+    box-shadow: 5px 7px #888888;
 }
