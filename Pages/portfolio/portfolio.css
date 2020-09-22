@@ -1,13 +1,17 @@
 .container{
     margin-top: 50px;
      width: 700px;
-     height: 740px;
+     height: 900px;
      margin-left: 100px;
      background-color: white;
      padding: 50px;
      margin-bottom: 100px;
  }
-
+img{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
  h1{
      color: teal;
      margin-left: 250px;
@@ -32,4 +36,55 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
     box-shadow: 5px 7px #888888;
+}
+@media screen and (max-width: 768px){
+    .container{
+        margin-top: 50px;
+         width: 300px;
+         height: 900px;
+         margin-left: 30px;
+         background-color: white;
+         padding: 50px;
+         margin-bottom: 100px;
+     }
+
+     h1{
+        color: teal;
+        margin-left: 0px;
+        font-family: cursive;
+    }
+
+    img{
+        position: relative;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .container{
+        margin-top: 50px;
+         width: 310px;
+         height: 1300px;
+         margin-left: 30px;
+         background-color: white;
+         padding: 50px;
+         margin-bottom: 100px;
+     }
+
+     .navbar-nav{
+        margin-left: auto;
+    }
+    .navbar{
+        padding: 20px;
+    }
+    .navbar-brand{
+        background-color: teal;
+        color: whitesmoke;
+        font-weight: bold;
+        padding: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        box-shadow: 5px 7px #888888;
+    }
 }
