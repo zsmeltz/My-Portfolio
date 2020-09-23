@@ -1,1 +1,2 @@
 This is a page for my portfolio!
+Here you will find a brief section on who I am along with some pictures of me, and a way to contact me. 
