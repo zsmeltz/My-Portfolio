@@ -96,3 +96,23 @@ img{
         box-shadow: 5px 7px #888888;
     }
 }
+
+#linkstoWork{
+    margin-top: 40px;
+    width: 400px;
+    height: 466px;
+    margin-left: 30px;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 100px;
+    float: right;
+    top: 20%;
+    left: 56%;
+    position: absolute;
+}
+#linkhead{
+    width: 291px;
+    height: 62px;
+    float: left;
+    left: -82%;
+}
