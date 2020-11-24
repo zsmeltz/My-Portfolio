@@ -24,7 +24,7 @@ function NavBar() {
             </NavItem>
             <NavItem>
               <Link
-                to="/about"
+                to="/portfolio"
                 className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}
               >
                 Portfolio
