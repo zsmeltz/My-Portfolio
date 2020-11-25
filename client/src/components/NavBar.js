@@ -12,12 +12,12 @@ function NavBar() {
 
   return (
     <div>
-      <Navbar color="faded" light>
-        <NavbarBrand href="/" className="mr-auto">Zach R. Smelcer</NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+      <Navbar color="faded" style={{backgroundColor: "#867B8E"}} light>
+        <NavbarBrand href="/" className="mr-auto" style={{color: "#26252D", fontFamily: "monospace", fontSize: 30, textDecoration: "underline"}}>Zach R. Smelcer</NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} style={{backgroundColor: "#BF716F"}}  className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
-            <NavItem>
+            <NavItem >
               <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
                 Home
             </Link>
