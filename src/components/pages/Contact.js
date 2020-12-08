@@ -4,11 +4,11 @@ import Resume from "./Resume.pdf"
 function Contact() {
 
 return (
-<div className="card">
-  <div className="card-header" style={{fontFamily: 'Ubuntu', fontSize: 25, fontWeight: "bold", backgroundColor: '#CCB7AE', color: "#26252D"}}>
+<div className="card" style={{border: 'black'}}>
+  <h2 className="card-header" style={{backgroundColor: '#252525', color: "#B8B8B8"}}>
     Contact Me
-  </div>
-  <div style={{backgroundColor: '#D6CFCB'}} className="card-body" >
+  </h2>
+  <div style={{backgroundColor: 'whitesmoke', fontSize: 18}} className="card-body" >
   <ul>
         <li>Email: zsmelcer98@gmail.com</li>
         <li>Phone #: 636-232-5019</li>

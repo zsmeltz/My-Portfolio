@@ -3,19 +3,22 @@ import myPic from "./assets/zachPic.png"
 
 
 function Home() {
+  
   return (
-    <div className="card" >
-    <h5 className="card-header" style={{fontFamily: 'Ubuntu', fontSize: 25, fontWeight: "bold", backgroundColor: '#CCB7AE', color: "#26252D"}}>About Me</h5>
-    <div className="card-body" style={{backgroundColor: "#D6CFCB"}}>
+    <div>
+    <div className="card"  style={{height: "80%", border: 'black', borderRadius: '0'}}>
+    <h2 className="card-header" style={{backgroundColor: '#252525', color: "#B8B8B8"}}>About Me</h2>
+    <div className="card-body" style={{backgroundColor: "#DCDCDC"}}>
     
     <img src={myPic} align="left" style={{margin: 5, borderRadius: "3%"}} alt="myPic"/>
-      <p className="card-text" align="right">
-          My name is Zach Smelcer and I am a junior Web-Developer currently studing at Northwestern Univercity Coding Boot Camp. My hope is to bring my expertise to the table and get into a career doing what I love. My whole life has revolved around computers as my parents taught me about them since I was very little. This created an interest in building with them and working with software. Until recently I learned how to work with the brains of the computer which opened my eyes to what they really are. 
+      <p className="card-text" align="right" style={{ fontSize: 18, color: "#393e46"}}>
+          My name is Zach Smelcer and I am a Junior Web-Developer currently studing at Northwestern University's Coding Boot Camp. My hope is to bring my expertise to the table towards a career doing what I love. Most of my life has revolved around technology ever since I was very little. When I would see new technologies I've never seen before, I'd be obssessed with learning about them. Growing up, I was tought a bit about how computers work and their hardware inspiring me to create my own. Recently, I've learned how to work with the brains of the computer which opened my eyes to a whole new digital world.  
       </p>
-      <p align="right">
-          I love solving problems no matter the situation. In my high school days engineering was my favourite subject and took classes three of the four years of my high school career. Now, I'm engineering but with computers and it's nothing but fun. Other than solving problems and innovation, music and gaming are my favourite hobbies. 
+      <p align="right" style={{ fontSize: 18}}>
+           In high school, engineering was my favorite subject and took classes three of the four years of my high school career. These were the days that I began to realise my knack for problem solving and innovation. Now, I'm progressively learning how to innovate, test, design, and create web applications and it's been nothing but fun. There are so many wonders out there that I want to see the backbones of so I can learn how to create new things and solve new problems.
       </p>
     </div>
+  </div>
   </div>
   );
 }
