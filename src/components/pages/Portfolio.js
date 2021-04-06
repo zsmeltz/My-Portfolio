@@ -14,14 +14,17 @@ import passgen from "./assets/passgen300x300.png";
 import workDay from "./assets/work-day.png";
 import eatdaburger from "./assets/eatdaburger.png";
 import fitness from "./assets/fitness.png";
-import empdir from "./assets/empdir.png";
+// import empdir from "./assets/empdir.png";
 import gb from "./assets/gb.png";
 import login from "./assets/login.png";
 import homepage from "./assets/homepage.png";
 import categories from "./assets/categories.png";
 import post from "./assets/post.png";
 import faves from "./assets/faves.png";
-
+import base from "./assets/base.png";
+import quote1 from "./assets/quote-1.png";
+import quote2 from "./assets/quote-2.png";
+import Footer from "../Footer";
 const items = [
   {
     src: login,
@@ -50,9 +53,27 @@ const items = [
   },
 ];
 
+const pnqImages = [
+  {
+    src: base,
+    altText: "Slide 1",
+    key: "1",
+  },
+  {
+    src: quote1,
+    altText: "Slide 2",
+    key: "2",
+  },
+  {
+    src: quote2,
+    altText: "Slide 3",
+    key: "3",
+  },
+];
+
 function Portfolio() {
   return (
-    <div style={{ backgroundColor: "#495057" }}>
+    <div style={{ backgroundColor: "#495057", overflow: "hidden" }}>
       <div id="apps">
         <Jumbotron fluid style={{ backgroundColor: "#252525" }}>
           <Container fluid>
@@ -82,54 +103,63 @@ function Portfolio() {
         <Row>
           <Col sm="6">
             <Card body style={{ backgroundColor: "#C0C0C0", margin: 20 }}>
-              <CardImg
-                src={empdir}
-                rounded="true"
-                style={{ marginBottom: 10 }}
-              />
-              <CardTitle tag="h4">Employee Directory</CardTitle>
-              <CardText>
-                A React app that uses the user's input to sort through a list of
-                employees and displays their information.{" "}
-              </CardText>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/zsmeltz/Employee-Directory"
-              >
-                -Employee Directory Repo
-              </a>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://zs-employee-directory.herokuapp.com/"
-              >
-                -Deployed Employee Directory
-              </a>
-            </Card>
-          </Col>
-          <Col sm="6">
-            <Card body style={{ backgroundColor: "#C0C0C0", margin: 20 }}>
-              <CardImg src={gb} rounded="true" style={{ marginBottom: 10 }} />
+              <CardImg src={gb} rounded="true" style={{ marginBottom: 20 }} />
               <CardTitle tag="h4">React Google Books Search</CardTitle>
               <CardText>
                 A React app that populates books based on the user's search. The
                 user can also choose to view a preview of the specific book or
                 save it to the 'saved' page.
               </CardText>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/zsmeltz/GB-SearchNSave"
-              >
-                -Google Books Search Repo
-              </a>
+              <h4>Try it out:</h4>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://gb-searchnsave.herokuapp.com/"
               >
-                -Deployed React Google Books Search
+                -React Google Books Search
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/zsmeltz/GB-SearchNSave"
+              >
+                -Repo/Docs
+              </a>
+            </Card>
+          </Col>
+          <Col sm="6">
+            <Card body style={{ backgroundColor: "#C0C0C0", margin: 20 }}>
+              {/* <CardImg src={gb} rounded="true" style={{ marginBottom: 10 }}> */}
+              <UncontrolledCarousel
+                items={pnqImages}
+                captionText="Pics N' Quotes"
+              />
+              {/* </CardImg> */}
+              <CardTitle tag="h4" style={{ marginTop: 20 }}>
+                Pics N' Quotes
+              </CardTitle>
+              <CardText>
+                This React app takes a quote API and a random background picture
+                API and integrates them into what is Pics N' Quotes. The card in
+                the middle features a clickable button that will make a random
+                quote appear each time the user clicks. The background images
+                change every time you open the page which gives the user a
+                different background upon each use.
+              </CardText>
+              <h4>Try it out:</h4>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://zsmeltz.github.io/Pics-N-Quotes/"
+              >
+                -Pics N' Quotes
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/zsmeltz/Pics-N-Quotes"
+              >
+                -Repo/Docs
               </a>
             </Card>
           </Col>
@@ -141,26 +171,27 @@ function Portfolio() {
               <CardImg
                 src={eatdaburger}
                 rounded="true"
-                style={{ marginBottom: 10 }}
+                style={{ marginBottom: 20 }}
               />
               <CardTitle tag="h4">Eat Da Burger</CardTitle>
               <CardText>
                 Fun app that uses a database to log new burgers and allows the
                 user to "eat" them.
               </CardText>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/zsmeltz/Eat-Da-Burger"
-              >
-                -Eat Da Burger Repo
-              </a>
+              <h4>Try it out:</h4>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://zs-eatdaburger.herokuapp.com/"
               >
-                -Deployed Eat Da Burger
+                -Eat Da Burger
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/zsmeltz/Eat-Da-Burger"
+              >
+                -Repo/Docs
               </a>
             </Card>
           </Col>
@@ -169,7 +200,7 @@ function Portfolio() {
               <CardImg
                 src={fitness}
                 rounded="true"
-                style={{ marginBottom: 10 }}
+                style={{ marginBottom: 20 }}
               />
               <CardTitle tag="h4">Fitness Workout Tracker</CardTitle>
               <CardText>
@@ -177,19 +208,20 @@ function Portfolio() {
                 create. The app also displays a page with tables to show workout
                 progress.
               </CardText>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/zsmeltz/Workout-Logger"
-              >
-                -Fitness Tracker Repo
-              </a>
+              <h4>Try it out:</h4>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://frozen-earth-44968.herokuapp.com/"
               >
-                -Deployed Fitness Tracker
+                -Fitness Tracker
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/zsmeltz/Workout-Logger"
+              >
+                -Repo/Docs
               </a>
             </Card>
           </Col>
@@ -201,26 +233,27 @@ function Portfolio() {
               <CardImg
                 src={passgen}
                 rounded="true"
-                style={{ marginBottom: 10 }}
+                style={{ marginBottom: 20 }}
               />
               <CardTitle tag="h4">Password Generator</CardTitle>
               <CardText>
                 An app that lets a user customize a randomly generated password
                 based on prompts.
               </CardText>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/zsmeltz/Simple-Password-Generator"
-              >
-                -Password Generator Repo
-              </a>
+              <h4>Try it out:</h4>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://zsmeltz.github.io/Simple-Password-Generator/"
               >
-                -Deployed Password Generator
+                -Password Generator
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/zsmeltz/Simple-Password-Generator"
+              >
+                -Repo/Docs
               </a>
             </Card>
           </Col>
@@ -229,26 +262,27 @@ function Portfolio() {
               <CardImg
                 src={workDay}
                 rounded="true"
-                style={{ marginBottom: 10 }}
+                style={{ marginBottom: 20 }}
               />
               <CardTitle tag="h4">Work-Day-Planner</CardTitle>
               <CardText>
                 A planner that lets a user save notes for their work-day. This
                 app also features a color scheme based of the time of day.
               </CardText>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/zsmeltz/Work-Day-Planner"
-              >
-                -Work-Day Planner Repo
-              </a>
+              <h4>Try it out:</h4>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://zsmeltz.github.io/Work-Day-Planner/"
               >
-                -Deployed Work Day Planner
+                -Work Day Planner
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/zsmeltz/Work-Day-Planner"
+              >
+                -Repo/Docs
               </a>
             </Card>
           </Col>
@@ -266,11 +300,10 @@ function Portfolio() {
         }}
       ></hr>
       <div>
-        <Row>
+        <Row style={{ left: 0, right: 0, marginRight: 0 }}>
           <Card body style={{ backgroundColor: "#C0C0C0", margin: 30 }}>
-            <UncontrolledCarousel items={items} />
-
-            <CardTitle tag="h4" style={{ marginTop: 10 }}>
+            <UncontrolledCarousel items={items} captionText="Bobby's Hobbies" />
+            <CardTitle tag="h4" style={{ marginTop: 20 }}>
               Bobby's Hobbies
             </CardTitle>
             <CardText>
@@ -290,19 +323,20 @@ function Portfolio() {
               <li>Aida Blinstrubyte</li>
               <li>Zach R. Smelcer</li>
             </ul>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/eptomlinson/BobbysHobbys"
-            >
-              -Bobby's Hobbies Repo
-            </a>
+            <h4>Try it out:</h4>
             <a
               target="_blank"
               rel="noreferrer"
               href="https://boiling-scrubland-76321.herokuapp.com/"
             >
-              -Deployed Bobby's Hobbies
+              -Bobby's Hobbies
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/eptomlinson/BobbysHobbys"
+            >
+              -Repo/Docs
             </a>
           </Card>
         </Row>
@@ -312,6 +346,7 @@ function Portfolio() {
           Back To Top
         </a>
       </div>
+      <Footer />
     </div>
   );
 }

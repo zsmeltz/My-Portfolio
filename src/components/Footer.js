@@ -6,8 +6,11 @@ function Footer() {
       <nav
         className="navbar justify-content-center"
         style={{
-          display: "flex ",
+          display: "flex",
+          // position: "absolute",
           bottom: 0,
+          height: "10%",
+          width: "100%",
           backgroundColor: "#252525",
           color: "#A0A0A0",
         }}
